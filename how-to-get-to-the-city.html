@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide: Riga to Piņķi and Jūrmala to Piņķi</title>
+    <style>
+        body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 15px;
+background: url("https://static.vecteezy.com/system/resources/previews/008/078/670/non_2x/europe-with-highlighted-latvia-map-vector.jpg") no-repeat;
+background-size: cover;
+
+}
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f5f5dc;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #clock, #calendar {
+            margin: 20px 0;
+            padding: 10px;
+            background: #ffefd5;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+text-align:center;
+        }
+.header {
+padding: 15px;
+text-align: center;
+background: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Flag-map_of_Latvia.svg") no-repeat;
+background-size: cover;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+<div class="header">
+  <h1 style="color:#000000">Travel Guide: Riga to Piņķi and Jūrmala to Piņķi</h1>
+  <p ><font color="black">Piņķi, Babītes pagasts, Mārupes novads.</font></p>
+
+</div>
+
+<div class="topnav">
+          <a href="how-to-get-to-the-city.html">How to get to the city?</a>
+           <a href="attractions.html">Attractions</a>
+           <a href="https://www.marupe.lv/lv/kultura/zinas">Events</a>
+           <a href="where-to-eat.html">Where to eat</a>
+            <a href="Piņķi.html" style="float:right">Main Page</a>
+</div>
+
+
+    <div id="clock"></div>
+    <div id="calendar"></div>
+
+    <h2>From Riga to Piņķi</h2>
+    <ul>
+        <li>
+            <strong>By Bus:</strong>
+            <p>Buses run regularly from Riga to Piņķi.</p>
+            <p>Check the bus schedule on the <a href="https://www.rigassatiksme.lv/en/" target="_blank">Rīgas satiksme website</a>.</p>
+            <p>Tickets can be purchased at Narvesen outlets, ticket machines, or via the Mobilly app.</p>
+        </li>
+        <li>
+            <strong>By Train:</strong>
+            <p>There is no direct train to Piņķi, but you can take a train to a nearby station and then use local transport.</p>
+            <p>Check the train schedules on <a href="https://www.pv.lv/en" target="_blank">Pv.lv</a>.</p>
+        </li>
+    </ul>
+
+    <h2>From Jūrmala to Piņķi</h2>
+    <ul>
+        <li>
+            <strong>By Bus:</strong>
+            <p>Buses run frequently from Jūrmala to Piņķi.</p>
+            <p>For the latest bus schedules, visit the <a href="https://www.rigassatiksme.lv/en/" target="_blank">Rīgas satiksme website</a>.</p>
+        </li>
+        <li>
+            <strong>By Train:</strong>
+            <p>Similar to the route from Riga, there is no direct train to Piņķi, but you can take a train to a nearby station and then use local transport.</p>
+            <p>Check the schedules on <a href="https://www.pv.lv/en" target="_blank">Pv.lv</a>.</p>
+        </li>
+    </ul>
+
+    <h2>Additional Information</h2>
+    <p>Public transport in Riga includes buses, trams, trolley-buses, and minibuses, operating from around 5 a.m. to midnight. Night buses are available on weekends.</p>
+    <p>Tickets for public transport should be registered with an electronic validator each time you board. For more information on ticket prices and purchasing options, refer to the <a href="https://www.rigassatiksme.lv/en/" target="_blank">Rīgas satiksme website</a>.</p>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            document.getElementById('clock').innerHTML = 'Current Time: ' + now.toLocaleTimeString([], options);
+        }
+
+        function updateCalendar() {
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('calendar').innerHTML = 'Current Date: ' + now.toLocaleDateString([], options);
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+        updateCalendar();
+    </script>
+
+</body>
+</html>
+
+
+
+
+
